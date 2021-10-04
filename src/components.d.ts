@@ -12,8 +12,18 @@ declare module 'vue' {
     CarbonPedestrian: typeof import('~icons/carbon/pedestrian')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
     CarbonWarning: typeof import('~icons/carbon/warning')['default']
+    Charity: typeof import('./components/Charity.vue')['default']
+    CharityButton: typeof import('./components/CharityButton.vue')['default']
+    CopyButton: typeof import('./components/CopyButton.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
+    ListItem: typeof import('./components/ListItem.vue')['default']
+    Livestream: typeof import('./components/Livestream.vue')['default']
+    LivestreamCredentials: typeof import('./components/LivestreamCredentials.vue')['default']
+    Nav: typeof import('./components/Nav.vue')['default']
     README: typeof import('./components/README.md')['default']
+    Service: typeof import('./components/Service.vue')['default']
+    ServiceAgendaItem: typeof import('./components/ServiceAgendaItem.vue')['default']
+    ServiceProgramme: typeof import('./components/ServiceProgramme.vue')['default']
   }
 }
 
