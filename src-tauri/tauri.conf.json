@@ -54,16 +54,14 @@
         "all": true
       }
     },
-    "windows": [
-      {
-        "title": "Vite/Vue Tauri Application",
-        "width": 800,
-        "height": 600,
-        "resizable": true,
-        "fullscreen": false
-      }
-    ],
-    "security": {
+    "windows": [{
+      "title": "Memorial Maker",
+      "label": "main"
+    }, {
+      "title": "Preview",
+      "label": "preview"
+    }],
+      "security": {
       "csp": "default-src asset: blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self' img-src: 'self'"
     }
   }
