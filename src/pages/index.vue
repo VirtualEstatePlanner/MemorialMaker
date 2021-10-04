@@ -19,15 +19,15 @@ const { t } = useI18n()
       <carbon-campsite class="inline-block" />
     </p>
     <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
+      <a rel="noreferrer" href="https://github.com/VirtualEstatePlanner/vitauriesse" target="_blank">
+        Vitauriesse
       </a>
     </p>
     <p>
       <em class="text-sm opacity-75">{{ t('intro.desc') }}</em>
     </p>
 
-    <div class="py-4" />
+    <div class="py-4"></div>
 
     <input
       id="input"
