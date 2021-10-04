@@ -1,0 +1,4 @@
+dist
+public
+!src-tauri/tauri.conf.json
+src-tauri
