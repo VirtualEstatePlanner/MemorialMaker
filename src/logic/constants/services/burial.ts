@@ -20,7 +20,7 @@ const burial: IService = {
     },
   },
   livestream: {
-    url: new URL(''),
+    url: new URL('https://megadocker.net'),
     requiresLogin: true,
     credentials: {
       username: '',
@@ -39,7 +39,7 @@ const burial: IService = {
       name: '',
     },
     postalCode: '',
-    mapURL: new URL(''),
+    mapURL: new URL('https://megadocker.net'),
     timeZone: {
       name: '',
       abbreviation: '',
