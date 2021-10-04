@@ -62,11 +62,17 @@
       }
     },
     "windows": [{
+      "label": "form",
+      "resizable": true,
       "title": "Memorial Maker",
-      "label": "form"
-    }, {
-      "title": "Preview",
-      "label": "preview"
+      "fileDropEnabled": true,
+      "url": "/form"
+      
+      }, {
+        "label": "preview",
+        "title": "Preview",
+        "resizable": true,
+        "url": "/preview"
     }],
       "security": {
       "csp": "default-src asset: blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self' img-src: 'self'"
