@@ -6,12 +6,13 @@
   "license": "Unlicense",
   "private": true,
   "scripts": {
-    "postinstall": "yarn typecheck && yarn lint",
-    "build": "yarn lint && cross-env NODE_ENV=production vite-ssg build && tauri build",
     "clean": "rm -rf node_modules yarn.lock package-lock.json pnpm-lock.yaml *.log",
-    "dev": "tauri dev",
+    "lint": "eslint \"**/*.{vue,ts,js,json,jsx,tsx}\"",
+    "icons": "tauri icons",
+    "postinstall": "yarn typecheck && yarn lint",
     "typecheck": "vue-tsc --noEmit",
-    "lint": "eslint \"**/*.{vue,ts,js,json,jsx,tsx}\""
+    "build": "yarn lint && cross-env NODE_ENV=production vite-ssg build && tauri build",
+    "dev": "tauri dev"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.0.0-beta.8",
