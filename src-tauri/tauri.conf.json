@@ -49,9 +49,16 @@
       "active": false
     },
     "allowlist": {
-      "all": true,
-      "globalShortcut": {
-        "all": true
+      "fs": {
+        "copyFile": true,
+        "createDir": true,
+        "readDir": true,
+        "readTextFile": true,
+        "writeFile": true
+      },
+      "dialog": {
+        "open": true,
+        "save": true
       }
     },
     "windows": [{
