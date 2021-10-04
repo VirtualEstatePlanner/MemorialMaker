@@ -11,4 +11,5 @@ intro:
   hi: Merhaba, {name}!
   aka: Ayrıca şöyle bilinir
   whats-your-name: Adınız nedir?
+  tauriMessage: TRANSLATE ME
 not-found: Bulunamadı

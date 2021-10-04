@@ -11,4 +11,6 @@ intro:
   hi: Salut, {name}!
   aka: Aussi connu sous le nom de
   whats-your-name: Comment t'appelles-tu ?
+  tauriMessage: TRANSLATE ME
+
 not-found: Page non trouvée

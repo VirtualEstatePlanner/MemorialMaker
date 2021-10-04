@@ -11,4 +11,5 @@ intro:
   hi: Olá, {name}!
   aka: Também conhecido como
   whats-your-name: Qual é o seu nome?
+  tauriMessage: TRANSLATE ME
 not-found: Não encontrado

@@ -10,4 +10,5 @@ intro:
   dynamic-route: Bản giới thiệu về dynamic route
   hi: Hi, {name}!
   whats-your-name: Tên bạn là gì?
+  tauriMessage: TRANSLATE ME
 not-found: Không tìm thấy

@@ -10,4 +10,5 @@ intro:
   dynamic-route: 動的ルートのデモ
   hi: こんにちは、{name}!
   whats-your-name: 君の名は。
+  tauriMessage: TRANSLATE ME
 not-found: 見つかりませんでした

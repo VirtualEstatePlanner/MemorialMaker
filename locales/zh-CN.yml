@@ -11,4 +11,5 @@ intro:
   hi: 你好，{name}
   aka: 也叫
   whats-your-name: 输入你的名字
+  tauriMessage: TRANSLATE ME
 not-found: 未找到页面

@@ -10,4 +10,5 @@ intro:
   dynamic-route: Demo di rotta dinamica
   hi: Ciao, {name}!
   whats-your-name: Come ti chiami?
+  tauriMessage: TRANSLATE ME
 not-found: Non trovato

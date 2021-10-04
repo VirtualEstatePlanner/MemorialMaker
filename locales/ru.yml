@@ -10,4 +10,5 @@ intro:
   dynamic-route: Демо динамического маршрута
   hi: Привет, {name}!
   whats-your-name: Как тебя зовут?
+  tauriMessage: TRANSLATE ME
 not-found: Не найден
