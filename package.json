@@ -1,15 +1,15 @@
 {
-  "name": "vite-tauri-esse",
+  "name": "memorialmaker",
   "version": "0.1.0",
-  "description": "A boilerplate for Vite, Vue, and Tauri",
-  "displayName": "Vite-tauri-esse",
+  "description": "A memorial website builder application",
+  "displayName": "Memorial Maker",
   "license": "Unlicense",
   "private": true,
   "scripts": {
-    "postinstall": "yarn lint && yarn typecheck",
+    "postinstall": "yarn typecheck && yarn lint",
     "build": "yarn lint && cross-env NODE_ENV=production vite-ssg build && tauri build",
     "clean": "rm -rf node_modules yarn.lock package-lock.json pnpm-lock.yaml *.log",
-    "dev": "vite --port 4000 & tauri dev",
+    "dev": "tauri dev",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint \"**/*.{vue,ts,js,json,jsx,tsx}\""
   },
@@ -18,11 +18,11 @@
     "@vueuse/core": "^6.5.3",
     "@vueuse/head": "^0.6.0",
     "nprogress": "^0.2.0",
-    "pinia": "^2.0.0-rc.10",
+    "pinia": "^2.0.0-rc.11",
     "prism-theme-vars": "^0.2.2",
     "vue": "^3.2.19",
     "vue-demi": "^0.11.4",
-    "vue-i18n": "^9.1.7",
+    "vue-i18n": "^9.1.8",
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
@@ -44,7 +44,7 @@
     "markdown-it-prism": "^2.2.1",
     "typescript": "^4.4.3",
     "unplugin-auto-import": "^0.4.10",
-    "unplugin-icons": "^0.12.6",
+    "unplugin-icons": "^0.12.7",
     "unplugin-vue-components": "^0.15.6",
     "vite": "^2.6.2",
     "vite-plugin-inspect": "^0.3.8",
