@@ -101,8 +101,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Memorial Maker',
+        short_name: 'memorialmaker',
         theme_color: '#ffffff',
         icons: [
           {
