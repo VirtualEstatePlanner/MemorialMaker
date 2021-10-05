@@ -62,17 +62,20 @@
       }
     },
     "windows": [{
-      "label": "form",
+      "label": "input",
       "resizable": true,
-      "title": "Form Input",
+      "title": "Input",
       "fileDropEnabled": true,
-      "url": "/form"
-      
+      "url": "/input",
+      "x": 0,
+      "y": 0
       }, {
         "label": "preview",
-        "title": "Output Preview",
+        "title": "Preview",
         "resizable": true,
-        "url": "/preview"
+        "url": "/preview",
+        "x": 800,
+        "y": 0
     }],
       "security": {
       "csp": "default-src asset: blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self' img-src: 'self'"
