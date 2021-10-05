@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useUserStore } from '~/stores/user'
+import useAppState from '~/stores/appState'
 
-const user = useUserStore()
-const name = ref(user.savedName)
+const appState = useAppState()
+const name = ref(appState.savedName)
 
 const router = useRouter()
 const go = () => {
@@ -15,18 +15,6 @@ const { t } = useI18n()
 
 <template>
   <div>
-    <p class="text-4xl">
-      <carbon-campsite class="inline-block" />
-    </p>
-    <p>
-      <a rel="noreferrer" href="https://github.com/VirtualEstatePlanner/vitauriesse" target="_blank">
-        Vitauriesse
-      </a>
-    </p>
-    <p>
-      <em class="text-sm opacity-75">{{ t('intro.desc') }}</em>
-    </p>
-
     <div class="py-4"></div>
 
     <input
