@@ -14,6 +14,7 @@ declare module 'vue' {
     CarbonWarning: typeof import('~icons/carbon/warning')['default']
     Charity: typeof import('./components/Charity.vue')['default']
     CharityButton: typeof import('./components/CharityButton.vue')['default']
+    CompositionContainer: typeof import('./components/CompositionContainer.vue')['default']
     CopyButton: typeof import('./components/CopyButton.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     ListItem: typeof import('./components/ListItem.vue')['default']

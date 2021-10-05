@@ -1,32 +1,23 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
+import ILovingMemoryApplicationState from '~/logic/model/ILovingMemoryApplicationState'
+import defaultStateObject from '~/logic/constants/defaultStateObject'
 
-const useAppState = defineStore('user', () => {
-  /**
-   * Current named of the user.
-   */
-  const savedName = ref('')
-  const previousNames = ref(new Set<string>())
+const useAppState = defineStore('appState', () => {
+  const currentState: ILovingMemoryApplicationState = reactive(defaultStateObject)
+  const previousAppStates = reactive(new Set<ILovingMemoryApplicationState>())
 
-  const usedNames = computed(() => Array.from(previousNames.value))
-  const otherNames = computed(() => usedNames.value.filter(name => name !== savedName.value))
+  const usedAppStates = computed(() => Array.from(previousAppStates))
+  const otherAppStates = computed(() => usedAppStates.value.filter((state: ILovingMemoryApplicationState) => state !== currentState))
 
-  /**
-   * Changes the current name of the user and saves the one that was used
-   * before.
-   *
-   * @param name - new name to set
-   */
-  function setNewName(name: string) {
-    if (savedName.value)
-      previousNames.value.add(savedName.value)
+  function setNewAppState(state: ILovingMemoryApplicationState) {
+    if (currentState) previousAppStates.add(currentState)
 
-    savedName.value = name
+    currentState.preferences.appWide.displayOnlyMiddleInitial = state.preferences.appWide.displayOnlyMiddleInitial
   }
-
   return {
-    setNewName,
-    otherNames,
-    savedName,
+    setNewAppState,
+    otherAppStates,
+    currentState,
   }
 })
 

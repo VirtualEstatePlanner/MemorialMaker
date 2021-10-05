@@ -1,19 +1,18 @@
 <script setup lang="ts">
 import useAppState from '~/stores/appState'
-
-const appState = useAppState()
-const state = ref(appState.savedAppState)
-
 const { t } = useI18n()
+const appState = useAppState()
 </script>
 
 <template>
   <div>
     <div class="py-4"></div>
-
+    <p>
+      {{ appState.currentState.memorialized.first }}
+    </p>
     <input
       id="input"
-      v-model="name"
+      v-model="appState.currentState.memorialized.first"
       :placeholder="t('intro.whats-your-name')"
       :aria-label="t('intro.whats-your-name')"
       type="text"
@@ -26,11 +25,10 @@ const { t } = useI18n()
       outline="none active:none"
     >
     <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
-
     <div>
       <button
         class="m-3 text-sm btn"
-        :disabled="!state"
+        :disabled="!appState.currentState"
       >
         {{ t('button.go') }}
       </button>
