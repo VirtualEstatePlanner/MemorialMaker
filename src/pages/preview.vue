@@ -2,13 +2,7 @@
 import useAppState from '~/stores/appState'
 
 const appState = useAppState()
-const name = ref(appState.savedName)
-
-const router = useRouter()
-const go = () => {
-  if (name.value)
-    router.push(`/hi/${encodeURIComponent(name.value)}`)
-}
+const state = ref(appState.savedAppState)
 
 const { t } = useI18n()
 </script>
@@ -30,15 +24,13 @@ const { t } = useI18n()
       bg="transparent"
       border="~ rounded gray-200 dark:gray-700"
       outline="none active:none"
-      @keydown.enter="go"
     >
     <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
 
     <div>
       <button
         class="m-3 text-sm btn"
-        :disabled="!name"
-        @click="go"
+        :disabled="!state"
       >
         {{ t('button.go') }}
       </button>
@@ -48,5 +40,5 @@ const { t } = useI18n()
 
 <route lang="yaml">
 meta:
-  layout: home
+  layout: beta
 </route>
