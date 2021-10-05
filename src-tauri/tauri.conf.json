@@ -64,13 +64,13 @@
     "windows": [{
       "label": "form",
       "resizable": true,
-      "title": "Memorial Maker",
+      "title": "Form Input",
       "fileDropEnabled": true,
       "url": "/form"
       
       }, {
         "label": "preview",
-        "title": "Preview",
+        "title": "Output Preview",
         "resizable": true,
         "url": "/preview"
     }],
