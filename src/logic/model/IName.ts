@@ -1,7 +1,7 @@
 import TNamePrefix from './TNamePrefix'
 import TNameSuffix from './TNameSuffix'
 
-interface IPerson {
+interface IName {
   first: string
   middle: string
   last: string
@@ -9,4 +9,4 @@ interface IPerson {
   prefix: TNameSuffix | null
 }
 
-export default IPerson
+export default IName
