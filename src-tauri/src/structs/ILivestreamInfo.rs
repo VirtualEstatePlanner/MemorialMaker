@@ -1,5 +1,17 @@
+mod ILivestreamCredentials;
+
+use url::URL;
+
 pub struct ILivestreamInfo {
-  requiresLogin: bool,
+  requires_login: bool,
   url: url::URL,
-  credentials: ILiveStreamCredentials
+  credentials: ILivestreamCredentials::new(),
+}
+
+pub fn new() -> ILivestreamInfo {
+  ILivestreamInfo {
+    requires_login: false,
+    url: URL::parse("default-url-location.com"),
+    credentials: ILivestreamCredentials::new()
+  }
 }

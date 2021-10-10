@@ -4,5 +4,16 @@ pub struct ITimeZone {
   offset: i16,
   isDaylightSavingsTime: &bool,
   description: &str,
-  utc: Vector<&str>
+  utc: Vec<&str>
+}
+
+pub fn new() -> ITimeZone {
+  ITimeZone {
+    name: "time-zone-name",
+    abbreviation: "TZN",
+    offset: 0,
+    isDaylightSavingsTime: &false,
+    description: "default-time-zone-description",
+    utc: Vec::new()
+  }
 }

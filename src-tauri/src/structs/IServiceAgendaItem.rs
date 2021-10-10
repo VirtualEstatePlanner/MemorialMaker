@@ -1,13 +1,15 @@
+use uuid::Uuid;
+
 pub struct IAgendaItem {
-    key: &str,
-    description: &str,
-    value: &str
+  key: &str,
+  description: &str,
+  value: &str
 }
 
-pub fn createServiceAgendaItem(description: &str, value: &str) -> IAgendaItem {
-    const key: &str = std::rand::random::<u64>();
-    const description: &str = description;
-    const value: &str = value;
-
-    return {key; description; value;}
+pub fn new() -> IAgendaItem {
+  IAgendaItem {
+    key: Uuid::new_v5(),
+    description = "agenda-item-description",
+    value = "agenda-item-value",
+  };
 }

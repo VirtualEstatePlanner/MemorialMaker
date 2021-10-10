@@ -1,8 +1,8 @@
-const senior: &str = "Sr.";
-const junior: &str = "Jr.";
-const third: &str = "III";
-const fourth: &str = "IV";
-const fifth: &str = "V";
-const none: &str = "";
+const SR: &str = "Sr.";
+const JR: &str = "Jr.";
+const THIRD: &str = "III";
+const FOURTH: &str = "IV";
+const FIFTH: &str = "V";
+const NONE: &str = "";
 
-pub enum UNameSuffixString  { senior, junior, third, fourth, fifth, none }
+pub enum UNameSuffixString  { SR, JR, THIRD, FOURTH, FIFTH, NONE }

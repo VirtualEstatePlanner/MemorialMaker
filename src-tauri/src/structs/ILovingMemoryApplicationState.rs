@@ -5,11 +5,6 @@ mod IMemorializedPerson;
 mod IService;
 mod UContentItem;
 
-pub fn new() {
-    struct IAppState {
-    }
-}
-
 pub struct ILovingMemoryApplicationState {
   preferences: IAppPreferences,
   memorialized: IMemorializedPerson,
@@ -17,6 +12,19 @@ pub struct ILovingMemoryApplicationState {
   cremation: IService,
   funeral: IService,
   scattering: IService,
-  charities: Vector<ICharity>,
-  contentItems: Vector<UContentItem>
+  charities: Vec<ICharity>,
+  content_items: Vec<UContentItem>
+}
+
+pub fn new() -> ILovingMemoryApplicationState {
+  ILovingMemoryApplicationState {
+    preferences: IAppPreferences::new(),
+    memorialized: IMemorializedPerson::new(),
+    burial: IService::new(),
+    cremation: IService::new(),
+    funeral: IService::new(),
+    scattering: IService::new(),
+    charities: Vec::new(),
+    content_items: Vec::new()
+  }
 }

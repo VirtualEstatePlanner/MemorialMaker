@@ -1,7 +1,6 @@
-const burial: &str = "burial";
-const cremation: &str = "cremation";
-const funeral: &str = "funeral";
-const scattering: &str = "scattering";
+const BURIAL: &str = "burial";
+const CREMATION: &str = "cremation";
+const FUNERAL: &str = "funeral";
+const SCATTERING: &str = "scattering";
 
-pub enum UServiceString { burial, cremation, funeral, scattering }
-
+pub enum UServiceString { BURIAL, CREMATION, FUNERAL, SCATTERING }
