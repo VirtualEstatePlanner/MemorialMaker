@@ -1,3 +1,5 @@
+mod IAudio;
+
 pub struct ISong {
   audio: IAudio,
   title: &str,

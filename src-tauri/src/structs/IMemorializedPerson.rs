@@ -1,3 +1,5 @@
+mod IName;
+
 pub struct IMemorializedPerson {
   person: IName,
   dateOfBirth: chrono::DateTime<chrono::Utc>,

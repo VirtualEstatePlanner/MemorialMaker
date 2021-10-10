@@ -1,3 +1,5 @@
+mod UServiceType;
+
 pub struct IServicePreferences {
   service_type: UServiceType,
   are_having: &bool,

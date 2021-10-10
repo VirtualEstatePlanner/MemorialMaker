@@ -1,3 +1,6 @@
+mod UNamePrefix;
+mod UNameSuffix;
+
 pub struct IName {
   pub first: &str,
   pub middle: &str,
