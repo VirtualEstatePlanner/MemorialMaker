@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import useAppState from '~/stores/appState'
 const { t } = useI18n()
-
-const appState = useAppState()
 
 </script>
 
@@ -10,11 +7,10 @@ const appState = useAppState()
   <div>
     <div class="py-4"></div>
     <p>
-      {{ appState.currentState.memorialized.first }}
+      name placeholder for tauri store
     </p>
     <input
       id="input"
-      v-model="appState.currentState.memorialized.first"
       :placeholder="t('intro.whats-your-name')"
       :aria-label="t('intro.whats-your-name')"
       type="text"
@@ -30,7 +26,7 @@ const appState = useAppState()
     <div>
       <button
         class="m-3 text-sm btn"
-        :disabled="!appState.currentState"
+        :disabled="false"
       >
         {{ t('button.go') }}
       </button>

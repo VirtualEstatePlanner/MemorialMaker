@@ -1,13 +1,6 @@
 <script setup lang="ts">
-import { useUserStore } from '~/stores/user'
 
-const user = useUserStore()
-const name = ref(user.savedName)
-
-const router = useRouter()
 const go = () => {
-  if (name.value)
-    router.push(`/hi/${encodeURIComponent(name.value)}`)
 }
 
 const { t } = useI18n()
@@ -49,7 +42,7 @@ const { t } = useI18n()
     <div>
       <button
         class="m-3 text-sm btn"
-        :disabled="!name"
+        :disabled="false"
         @click="go"
       >
         {{ t('button.go') }}
