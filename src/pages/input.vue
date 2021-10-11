@@ -11,7 +11,7 @@ const { t } = useI18n()
       <input type="checkbox" :label="t('intro.whats-your-name')" />
     </div>
     <p>
-      name placeholder for tauri store
+      placeholder for name from tauri store
     </p>
     <input
       id="input"

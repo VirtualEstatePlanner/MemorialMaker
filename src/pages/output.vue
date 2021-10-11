@@ -6,7 +6,7 @@ const { t } = useI18n()
   <div>
     <div class="py-4"></div>
     <p>
-      placeholder for value from tauri state
+      placeholder for name from tauri store
     </p>
     <input
       id="input"
