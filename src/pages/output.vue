@@ -35,5 +35,5 @@ const { t } = useI18n()
 
 <route lang="yaml">
 meta:
-  layout: beta
+  layout: output
 </route>

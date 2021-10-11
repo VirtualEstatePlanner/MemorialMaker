@@ -6,6 +6,10 @@ const { t } = useI18n()
 <template>
   <div>
     <div class="py-4"></div>
+    <div>
+      sample checkbox
+      <input type="checkbox" :label="t('intro.whats-your-name')" />
+    </div>
     <p>
       name placeholder for tauri store
     </p>
@@ -36,5 +40,5 @@ const { t } = useI18n()
 
 <route lang="yaml">
 meta:
-  layout: alpha
+  layout: input
 </route>

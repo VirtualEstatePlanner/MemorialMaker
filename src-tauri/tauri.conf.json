@@ -70,10 +70,10 @@
       "x": 0,
       "y": 0
       }, {
-        "label": "preview",
-        "title": "Preview",
+        "label": "output",
+        "title": "Output",
         "resizable": true,
-        "url": "/preview",
+        "url": "/output",
         "x": 800,
         "y": 0
     }],
