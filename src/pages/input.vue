@@ -27,14 +27,6 @@ const { t } = useI18n()
       outline="none active:none"
     >
     <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
-    <div>
-      <button
-        class="m-3 text-sm btn"
-        :disabled="false"
-      >
-        {{ t('button.go') }}
-      </button>
-    </div>
   </div>
 </template>
 
