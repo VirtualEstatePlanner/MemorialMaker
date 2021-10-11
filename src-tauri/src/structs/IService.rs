@@ -3,6 +3,7 @@ mod ILivestreamCredentials;
 mod ILivestreamInfo;
 mod ILocation;
 mod IServiceAgendaItem;
+mod IServicePreferences;
 mod UServiceType;
 
 use date::DateTime;
@@ -14,8 +15,8 @@ pub struct IService {
   contact: IContactPerson,
   livestream: ILivestreamInfo,
   location: ILocation,
-  service_type: UServiceType,
   programme: Vec<IServiceAgendaItem>,
+  service_type: UServiceType,
   time: DateTime<Utc>,
 }
 
@@ -26,8 +27,8 @@ pub fn new() -> IService {
     contact: IContactPerson::new(),
     livestream: ILivestreamInfo::new(),
     location: ILocation::new(),
+    programme: Vec<IServiceAgendaItem>::new(),
     service_type: UServiceType::new(),
-    programme: Vec::new(),
     time: DateTime::<Utc>::now(),
   }
 }

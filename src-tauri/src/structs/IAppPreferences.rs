@@ -3,12 +3,18 @@ mod IServicePrefernces;
 
 pub struct IAppPreferences {
   app_wide: IAppWidePreferences,
-  service_preferences: Vec<IServicePreferences>,
+  burial_preferences: IServicePreferences,
+  cremation_preferences: IServicePreferences,
+  funeral_preferences: IServicePreferences,
+  scattering_preferences: IServicePreferences,
 }
 
 pub fn new() -> IAppPreferences {
   IAppPreferences {
     app_wide: IAppWidePreferences::new(),
-    service_preferences: Vec<IServicePreferences>::new(),
+    burial_preferences: IServicePreferences::new(),
+    cremation_preferences: IServicePreferences::new(),
+    funeral_preferences: IServicePreferences::new(),
+    scattering_preferences: IServicePreferences::new(),
   }
 }
