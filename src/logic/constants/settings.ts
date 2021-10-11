@@ -41,7 +41,7 @@ serviceEndsTime: { hours:number, minutes: number }: new Date().getTime() // shou
 serviceLivestreamURL: URL: new URL('https://megadocker.net')
 serviceLivestreamUsername: 'loginusername'
 serviceLivestreamPassword: 'loginpassword'
-serviceAgendaItems: () => IAgendaItem[]
+serviceAgendaItems: () => IServiceAgendaItem[]
 
 serviceOpeningSong: 'some song'
 serviceScriptureReading: 'some reading'

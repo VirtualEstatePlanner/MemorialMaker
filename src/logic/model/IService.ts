@@ -1,7 +1,7 @@
 import IContactPerson from './IContactPerson'
 import ILivestreamInfo from './ILivestreamInfo'
 import ILocation from './ILocation'
-import IAgendaItem from './IAgendaItem'
+import IServiceAgendaItem from './IServiceAgendaItem'
 import TServiceType from './TServiceType'
 
 interface IService {
@@ -11,7 +11,7 @@ interface IService {
   livestream: ILivestreamInfo
   location: ILocation
   type: TServiceType
-  programme: IAgendaItem[]
+  programme: IServiceAgendaItem[]
   time: Date
 }
 
