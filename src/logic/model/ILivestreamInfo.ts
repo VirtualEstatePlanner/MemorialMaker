@@ -2,8 +2,8 @@ interface ILivestreamInfo {
   requiresLogin: Boolean
   url: URL
   credentials?: {
-    username: string
-    password: string
+    username: String
+    password: String
   }
 }
 

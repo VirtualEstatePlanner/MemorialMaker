@@ -1,7 +1,7 @@
 interface IEmailAddress {
-  username: string
-  domain: string
-  tld: string
+  username: String
+  domain: String
+  tld: String
 }
 
 export default IEmailAddress

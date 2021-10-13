@@ -1,34 +1,34 @@
-mod IContactPerson;
-mod ILivestreamCredentials;
-mod ILivestreamInfo;
-mod ILocation;
-mod IServiceAgendaItem;
-mod IServicePreferences;
-mod UServiceType;
+use crate::structs::IContactPerson;
+use crate::structs::ILivestreamInfo;
+use crate::structs::ILocation;
+// use crate::structs::IServiceAgendaItem;
+use crate::structs::UServiceType;
 
-use date::DateTime;
+//use chrono::DateTime;
+//use chrono::Utc;
+
 use uuid::Uuid;
 
 pub struct IService {
-  key: Uuid::new_v5(),
-  additional_info: &str,
-  contact: IContactPerson,
-  livestream: ILivestreamInfo,
-  location: ILocation,
-  programme: Vec<IServiceAgendaItem>,
-  service_type: UServiceType,
-  time: DateTime<Utc>,
+  key: Uuid,
+  additional_info: String,
+  contact: IContactPerson::IContactPerson,
+  livestream: ILivestreamInfo::ILivestreamInfo,
+  location: ILocation::ILocation,
+  // programme: Vec<IServiceAgendaItem::IServiceAgendaItem>,
+  service_type: String,
+  // time: DateTime<Utc>,
 }
 
 pub fn new() -> IService {
   IService {
-    key: Uuid::new_v5(),
-    additional_info: "additional-service-info-string",
+    key: Uuid::new_v4(),
+    additional_info: "additional-service-info-string".to_string(),
     contact: IContactPerson::new(),
     livestream: ILivestreamInfo::new(),
     location: ILocation::new(),
-    programme: Vec<IServiceAgendaItem>::new(),
-    service_type: UServiceType::new(),
-    time: DateTime::<Utc>::now(),
+    // programme: Vec::<IServiceAgendaItem>::new(),
+    service_type: UServiceType::BURIAL,
+    // time: DateTime::<Utc>::from_utc(Utc::now(), Utc),
   }
 }

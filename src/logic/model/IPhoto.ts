@@ -1,5 +1,5 @@
 interface IPhoto {
-  caption: string
+  caption: String
   original: ImageBitmap
   generateThumbnail: (photo: ImageBitmap) => ImageBitmap // move to utility-functions
 }

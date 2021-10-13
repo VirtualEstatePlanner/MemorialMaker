@@ -1,13 +1,13 @@
 pub struct IEmailAddress {
-  pub username: &str,
-  pub domain: &str,
-  pub tld: &str,
+  username: String,
+  domain: String,
+  tld: String,
 }
 
 pub fn new() -> IEmailAddress {
   IEmailAddress {
-    username: "user",
-    domain: "domain",
-    tld: "tld",
+    username: "user".to_string(),
+    domain: "domain".to_string(),
+    tld: "tld".to_string(),
   }
 }

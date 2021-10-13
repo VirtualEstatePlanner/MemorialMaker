@@ -1,8 +1,8 @@
 import IAudio from './IAudio'
 
 interface ISong extends IAudio {
-  title: string
-  artist: string | null
+  title: String
+  artist: String | null | undefined
 }
 
 export default ISong

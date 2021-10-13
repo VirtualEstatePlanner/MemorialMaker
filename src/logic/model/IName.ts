@@ -2,9 +2,9 @@ import TNamePrefix from './TNamePrefix'
 import TNameSuffix from './TNameSuffix'
 
 interface IName {
-  first: string
-  middle: string
-  last: string
+  first: String
+  middle: String
+  last: String
   suffix: TNamePrefix | null
   prefix: TNameSuffix | null
 }

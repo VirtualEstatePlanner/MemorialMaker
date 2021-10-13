@@ -1,15 +1,15 @@
 use uuid::Uuid;
 
-pub struct IAgendaItem {
-  key: &str,
-  description: &str,
-  value: &str
+pub struct IServiceAgendaItem {
+  key: Uuid,
+  description: String,
+  value: String,
 }
 
-pub fn new() -> IAgendaItem {
-  IAgendaItem {
-    key: Uuid::new_v5(),
-    description = "agenda-item-description",
-    value = "agenda-item-value",
-  };
+pub fn new() -> IServiceAgendaItem {
+  IServiceAgendaItem {
+    key: Uuid::new_v4(),
+    description: "agenda-item-description".to_string(),
+    value: "agenda-item-value".to_string(),
+  }
 }

@@ -1,11 +1,11 @@
 pub struct ILivestreamCredentials {
-  username: &str,
-  password: &str
+  username: String,
+  password: String,
 }
 
 pub fn new() -> ILivestreamCredentials {
   ILivestreamCredentials {
-    username: "livestream-username",
-    password: "livestream-password"
+    username: "livestream-username".to_string(),
+    password: "livestream-password".to_string(),
   }
 }

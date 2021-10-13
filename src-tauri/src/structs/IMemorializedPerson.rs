@@ -1,15 +1,16 @@
-mod IName;
+use crate::structs::IName;
+use chrono::{DateTime, NaiveDateTime, Utc};
 
 pub struct IMemorializedPerson {
-  person: IName,
-  dateOfBirth: chrono::DateTime<chrono::Utc>,
-  dateOfDeath: chrono::DateTime<chrono::Utc>
+  person: IName::IName,
+  dateOfBirth: DateTime<Utc>,
+  dateOfDeath: DateTime<Utc>,
 }
 
 pub fn new() -> IMemorializedPerson {
   IMemorializedPerson {
     person: IName::new(),
-    dateOfBirth: chrono::DateTime::<chrono::Utc>::from_utc(chrono::NaiveDateTime::from_timestamp(0, 0), chrono::Utc),
-    dateOfDeath: chrono::DateTime::<chrono::Utc>::from_utc(chrono::NaiveDateTime::from_timestamp(0, 0), chrono::Utc)
+    dateOfBirth: DateTime::<Utc>::from_utc(NaiveDateTime::from_timestamp(0, 0), Utc),
+    dateOfDeath: DateTime::<Utc>::from_utc(NaiveDateTime::from_timestamp(0, 0), Utc),
   }
 }

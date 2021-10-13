@@ -1,12 +1,12 @@
-mod IAppWidePreferences;
-mod IServicePrefernces;
+use crate::structs::IAppWidePreferences;
+use crate::structs::IServicePreferences;
 
 pub struct IAppPreferences {
-  app_wide: IAppWidePreferences,
-  burial_preferences: IServicePreferences,
-  cremation_preferences: IServicePreferences,
-  funeral_preferences: IServicePreferences,
-  scattering_preferences: IServicePreferences,
+  app_wide: IAppWidePreferences::IAppWidePreferences,
+  burial_preferences: IServicePreferences::IServicePreferences,
+  cremation_preferences: IServicePreferences::IServicePreferences,
+  funeral_preferences: IServicePreferences::IServicePreferences,
+  scattering_preferences: IServicePreferences::IServicePreferences,
 }
 
 pub fn new() -> IAppPreferences {

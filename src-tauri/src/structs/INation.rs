@@ -1,13 +1,13 @@
 pub struct INation {
-  alpha2: &str,
-  alpha3: &str,
-  name: &str
+  alpha2: String,
+  alpha3: String,
+  name: String,
 }
 
 pub fn new() -> INation {
   INation {
-    alpha2: "US",
-    alpha3: "USA",
-    name: "United States of America"
+    alpha2: "US".to_string(),
+    alpha3: "USA".to_string(),
+    name: "United States of America".to_string(),
   }
 }

@@ -1,17 +1,17 @@
-mod ILivestreamCredentials;
+use crate::structs::ILivestreamCredentials;
 
-use url::URL;
+use url::Url;
 
 pub struct ILivestreamInfo {
   requires_login: bool,
-  url: url::URL,
-  credentials: ILivestreamCredentials::new(),
+  url: url::Url,
+  credentials: ILivestreamCredentials::ILivestreamCredentials,
 }
 
 pub fn new() -> ILivestreamInfo {
   ILivestreamInfo {
     requires_login: false,
-    url: URL::parse("default-url-location.com"),
-    credentials: ILivestreamCredentials::new()
+    url: Url::parse("default-url-location.com").unwrap(),
+    credentials: ILivestreamCredentials::new(),
   }
 }

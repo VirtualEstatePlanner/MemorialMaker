@@ -1,30 +1,30 @@
-mod INation;
-mod ITimeZone;
+use crate::structs::INation;
+use crate::structs::ITimeZone;
 
-use url::URL;
+use url::Url;
 
 pub struct ILocation {
-  location_name: &str,
-  street_number: &str,
-  street_name: &str,
-  city_or_town: &str,
-  state_or_province: &str,
-  country: INation,
-  postal_code: &str,
-  map_url: url::URL,
-  time_zone: ITimeZone
+  location_name: String,
+  street_number: String,
+  street_name: String,
+  city_or_town: String,
+  state_or_province: String,
+  country: INation::INation,
+  postal_code: String,
+  map_url: Url,
+  time_zone: ITimeZone::ITimeZone,
 }
 
 pub fn new() -> ILocation {
   ILocation {
-    location_name: "default-location-name",
-    street_number: "default-street-number",
-    street_name: "default-street-name",
-    city_or_town: "default-city-or-town",
-    state_or_province: "default-state-or-province",
+    location_name: "default-location-name".to_string(),
+    street_number: "default-street-number".to_string(),
+    street_name: "default-street-name".to_string(),
+    city_or_town: "default-city-or-town".to_string(),
+    state_or_province: "default-state-or-province".to_string(),
     country: INation::new(),
-    postal_code: "default-postal-code",
-    map_url: URL::new(),
-    time_zone: ITimeZone::new()
+    postal_code: "default-postal-code".to_string(),
+    map_url: Url::parse("default-location-url.com").unwrap(),
+    time_zone: ITimeZone::new(),
   }
 }

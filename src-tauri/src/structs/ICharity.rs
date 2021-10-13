@@ -1,15 +1,15 @@
-use url::URL;
+use url::Url;
 
 pub struct ICharity {
-  name: &str,
-  issue: &str,
-  url: URL,
+  name: String,
+  issue: String,
+  url: Url,
 }
 
 pub fn new() -> ICharity {
   ICharity {
-    name: "charity-name",
-    issue: "charity-issue",
-    url: URL::parse("default-url-location.com").unwrap(),
+    name: "charity-name".to_string(),
+    issue: "charity-issue".to_string(),
+    url: Url::parse("default-url-location.com").unwrap(),
   }
 }

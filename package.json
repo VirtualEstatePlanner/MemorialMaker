@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf node_modules yarn.lock package-lock.json pnpm-lock.yaml *.log",
-    "lint": "yarn eslint \"**/*.{vue,ts,js,json,jsx,tsx}\" && rustfmt src-tauri/**/*.rs",
+    "lint": "yarn eslint \"**/*.{vue,ts,js,json,jsx,tsx}\" --fix && rustfmt src-tauri/**/*.rs --emit files",
     "icons": "tauri icons",
     "postinstall": "yarn typecheck && yarn lint",
     "typecheck": "vue-tsc --noEmit",

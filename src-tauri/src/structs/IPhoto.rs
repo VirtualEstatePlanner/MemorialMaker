@@ -1,14 +1,14 @@
-use image::ImageBuffer;
+//use image::ImageBuffer;
 
 pub struct IPhoto {
-  caption: &str,
-  original: ImageBuffer
+  caption: String,
+  //original: ImageBuffer
   // generateThumbnail: (photo: ImageBitmap) => ImageBitmap // move to utility-functions
 }
 
 pub fn new() -> IPhoto {
   IPhoto {
-    caption: "photo-caption",
-    original: ImageBuffer::new(0,0)
+    caption: "photo-caption".to_string(),
+    //original: ImageBuffer::new(0, 0),
   }
 }

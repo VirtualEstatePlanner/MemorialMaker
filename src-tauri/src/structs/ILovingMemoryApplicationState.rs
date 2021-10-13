@@ -1,19 +1,18 @@
-mod IAppPreferences;
-mod ICharity;
-mod IContactPerson;
-mod IMemorializedPerson;
-mod IService;
-mod UContentItem;
+use crate::structs::IAppPreferences;
+use crate::structs::ICharity;
+use crate::structs::IMemorializedPerson;
+use crate::structs::IService;
+use crate::structs::UContentItem;
 
 pub struct ILovingMemoryApplicationState {
-  preferences: IAppPreferences,
-  memorialized: IMemorializedPerson,
-  burial: IService,
-  cremation: IService,
-  funeral: IService,
-  scattering: IService,
-  charities: Vec<ICharity>,
-  content_items: Vec<UContentItem>
+  preferences: IAppPreferences::IAppPreferences,
+  memorialized: IMemorializedPerson::IMemorializedPerson,
+  burial: IService::IService,
+  cremation: IService::IService,
+  funeral: IService::IService,
+  scattering: IService::IService,
+  charities: Vec<ICharity::ICharity>,
+  content_items: Vec<UContentItem::UContentItem>,
 }
 
 pub fn new() -> ILovingMemoryApplicationState {
@@ -24,7 +23,7 @@ pub fn new() -> ILovingMemoryApplicationState {
     cremation: IService::new(),
     funeral: IService::new(),
     scattering: IService::new(),
-    charities: Vec::new(),
-    content_items: Vec::new()
+    charities: Vec::<ICharity::ICharity>::new(),
+    content_items: Vec::<UContentItem::UContentItem>::new(),
   }
 }

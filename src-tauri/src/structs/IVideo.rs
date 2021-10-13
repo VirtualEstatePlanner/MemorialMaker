@@ -1,21 +1,21 @@
-use image::ImageBuffer;
+//use image::ImageBuffer;
+use url::Url;
 use uuid::Uuid;
-use url::URL;
 
 pub struct IVideo {
-  key: Uuid::new_v5(),
-  caption: &str,
-  thumbnail: Vec<image::ImageBuffer>,
+  key: Uuid,
+  caption: String,
+  //thumbnail: Vec<ImageBuffer>,
   // generateThumbnail to an array of frames selected based on the number of frames in the video
   // probably requires video reading libaray such as ffmpeg
-  video_data: url::URL
+  video_data: Url,
 }
 
 pub fn new() -> IVideo {
   IVideo {
-    key: Uuid::new_v5(),
-    caption: "video-caption",
-    thumbnail: Vec<ImageBuffer>::new(0,0),
-    video_data: URL::parse("default-url-location.com").unwrap(),
+    key: Uuid::new_v4(),
+    caption: "video-caption".to_string(),
+    //thumbnail: Vec::<ImageBuffer>::new(),
+    video_data: Url::parse("default-url-location.com").unwrap(),
   }
 }
