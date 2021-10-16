@@ -2,7 +2,7 @@
 name = "memorial-maker"
 version = "0.1.0"
 description = "A Memorial website builder"
-authors = ["you"]
+authors = ["Coderior, VirtualEstatePlanner"]
 license = ""
 repository = ""
 edition = "2018"
@@ -27,3 +27,6 @@ serde_json = "1.0.68"
 [features]
 default = [ "custom-protocol" ]
 custom-protocol = [ "tauri/custom-protocol" ]
+proc-macro = []
+proc-macro-derive = []
+proc-macro-lib = []
