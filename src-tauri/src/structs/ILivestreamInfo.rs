@@ -9,7 +9,7 @@ pub struct ILivestreamInfo {
 }
 
 pub fn new() -> ILivestreamInfo {
-  ILivestreamInfo {
+  return ILivestreamInfo {
     requires_login: false,
     url: Url::parse("default-url-location.com").unwrap(),
     credentials: ILivestreamCredentials::new(),

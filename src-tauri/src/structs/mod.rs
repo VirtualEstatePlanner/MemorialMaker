@@ -18,7 +18,6 @@ pub mod IServicePreferences;
 pub mod ISong;
 pub mod ITimeZone;
 pub mod IVideo;
-pub mod UContentItem;
 pub mod UNamePrefix;
 pub mod UNameSuffix;
 pub mod UServiceType;

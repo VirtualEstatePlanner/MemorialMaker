@@ -5,7 +5,7 @@ pub struct INation {
 }
 
 pub fn new() -> INation {
-  INation {
+  return INation {
     alpha2: "US".to_string(),
     alpha3: "USA".to_string(),
     name: "United States of America".to_string(),

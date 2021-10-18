@@ -5,7 +5,7 @@ pub struct IEmailAddress {
 }
 
 pub fn new() -> IEmailAddress {
-  IEmailAddress {
+  return IEmailAddress {
     username: "user".to_string(),
     domain: "domain".to_string(),
     tld: "tld".to_string(),

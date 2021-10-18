@@ -10,11 +10,11 @@ pub struct IName {
 }
 
 pub fn new() -> IName {
-  IName {
+  return IName {
     first: "first-name".to_string(),
     middle: "middle-name".to_string(),
     last: "last-name".to_string(),
-    prefix: UNamePrefix::NONE,
-    suffix: UNameSuffix::NONE,
+    prefix: UNamePrefix::NONE.to_string(),
+    suffix: UNameSuffix::NONE.to_string(),
   }
 }

@@ -10,7 +10,7 @@ pub struct IAppPreferences {
 }
 
 pub fn new() -> IAppPreferences {
-  IAppPreferences {
+  return IAppPreferences {
     app_wide: IAppWidePreferences::new(),
     burial_preferences: IServicePreferences::new(),
     cremation_preferences: IServicePreferences::new(),

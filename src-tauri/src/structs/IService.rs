@@ -21,14 +21,14 @@ pub struct IService {
 }
 
 pub fn new() -> IService {
-  IService {
+  return IService {
     key: Uuid::new_v4(),
     additional_info: "additional-service-info-string".to_string(),
     contact: IContactPerson::new(),
     livestream: ILivestreamInfo::new(),
     location: ILocation::new(),
     // programme: Vec::<IServiceAgendaItem>::new(),
-    service_type: UServiceType::BURIAL,
+    service_type: UServiceType::BURIAL.to_string(),
     // time: DateTime::<Utc>::from_utc(Utc::now(), Utc),
   }
 }

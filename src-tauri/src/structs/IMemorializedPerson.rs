@@ -3,14 +3,14 @@ use chrono::{DateTime, NaiveDateTime, Utc};
 
 pub struct IMemorializedPerson {
   person: IName::IName,
-  dateOfBirth: DateTime<Utc>,
-  dateOfDeath: DateTime<Utc>,
+  date_of_birth: DateTime<Utc>,
+  date_of_death: DateTime<Utc>,
 }
 
 pub fn new() -> IMemorializedPerson {
-  IMemorializedPerson {
+  return IMemorializedPerson {
     person: IName::new(),
-    dateOfBirth: DateTime::<Utc>::from_utc(NaiveDateTime::from_timestamp(0, 0), Utc),
-    dateOfDeath: DateTime::<Utc>::from_utc(NaiveDateTime::from_timestamp(0, 0), Utc),
+    date_of_birth: DateTime::<Utc>::from_utc(NaiveDateTime::from_timestamp(0, 0), Utc),
+    date_of_death: DateTime::<Utc>::from_utc(NaiveDateTime::from_timestamp(0, 0), Utc),
   }
 }

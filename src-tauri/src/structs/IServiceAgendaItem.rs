@@ -7,7 +7,7 @@ pub struct IServiceAgendaItem {
 }
 
 pub fn new() -> IServiceAgendaItem {
-  IServiceAgendaItem {
+  return IServiceAgendaItem {
     key: Uuid::new_v4(),
     description: "agenda-item-description".to_string(),
     value: "agenda-item-value".to_string(),

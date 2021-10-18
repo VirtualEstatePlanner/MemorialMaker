@@ -6,8 +6,8 @@ pub struct IAudio {
 }
 
 pub fn new() -> IAudio {
-  IAudio {
-    audio_data: Url::parse("default-url-location.com").unwrap(),
+  return IAudio {
+    audio_data: Url::parse("https://default-url-location.com").unwrap(),
     duration: 0,
   }
 }

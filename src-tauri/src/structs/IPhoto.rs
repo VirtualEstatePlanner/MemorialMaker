@@ -7,7 +7,7 @@ pub struct IPhoto {
 }
 
 pub fn new() -> IPhoto {
-  IPhoto {
+  return IPhoto {
     caption: "photo-caption".to_string(),
     //original: ImageBuffer::new(0, 0),
   }

@@ -1,9 +1,9 @@
-pub const MR: String = String::from("Mr.");
-pub const MS: String = String::from("Ms.");
-pub const MRS: String = String::from("Mrs.");
-pub const DR: String = String::from("Dr.");
-pub const PROF: String = String::from("Prof.");
-pub const NONE: String = String::from("");
+pub const MR: &str = "Mr.";
+pub const MS: &str = "Ms.";
+pub const MRS: &str = "Mrs.";
+pub const DR: &str = "Dr.";
+pub const PROF: &str = "Prof.";
+pub const NONE: &str = "";
 
 pub enum UNamePrefix {
   MR,

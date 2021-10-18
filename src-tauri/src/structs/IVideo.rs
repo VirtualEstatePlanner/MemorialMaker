@@ -12,10 +12,10 @@ pub struct IVideo {
 }
 
 pub fn new() -> IVideo {
-  IVideo {
+  return IVideo {
     key: Uuid::new_v4(),
     caption: "video-caption".to_string(),
     //thumbnail: Vec::<ImageBuffer>::new(),
-    video_data: Url::parse("default-url-location.com").unwrap(),
+    video_data: Url::parse("https://default-url-location.com").unwrap(),
   }
 }

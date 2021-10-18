@@ -8,8 +8,8 @@ pub struct IServicePreferences {
 }
 
 pub fn new() -> IServicePreferences {
-  IServicePreferences {
-    service_type: UServiceType::BURIAL,
+  return IServicePreferences {
+    service_type: UServiceType::BURIAL.to_string(),
     are_having: false,
     are_livestreaming: false,
     livestream_is_public: false,

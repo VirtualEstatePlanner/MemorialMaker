@@ -16,7 +16,7 @@ pub struct ILocation {
 }
 
 pub fn new() -> ILocation {
-  ILocation {
+  return ILocation {
     location_name: "default-location-name".to_string(),
     street_number: "default-street-number".to_string(),
     street_name: "default-street-name".to_string(),

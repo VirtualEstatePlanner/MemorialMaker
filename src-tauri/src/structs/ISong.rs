@@ -7,7 +7,7 @@ pub struct ISong {
 }
 
 pub fn new() -> ISong {
-  ISong {
+  return ISong {
     audio: IAudio::new(),
     title: "song-title".to_string(),
     artist: "song-artist".to_string(),

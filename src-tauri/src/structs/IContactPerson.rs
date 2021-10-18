@@ -10,7 +10,7 @@ pub struct IContactPerson {
 }
 
 pub fn new() -> IContactPerson {
-  IContactPerson {
+  return IContactPerson {
     name: IName::new(),
     phone_number: "contact-phone-number".to_string(),
     email: IEmailAddress::new(),
