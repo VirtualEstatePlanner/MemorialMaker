@@ -26,5 +26,5 @@ pub fn new() -> ILocation {
     postal_code: "default-postal-code".to_string(),
     map_url: Url::parse("default-location-url.com").unwrap(),
     time_zone: ITimeZone::new(),
-  }
+  };
 }

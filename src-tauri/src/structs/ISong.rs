@@ -11,5 +11,5 @@ pub fn new() -> ISong {
     audio: IAudio::new(),
     title: "song-title".to_string(),
     artist: "song-artist".to_string(),
-  }
+  };
 }

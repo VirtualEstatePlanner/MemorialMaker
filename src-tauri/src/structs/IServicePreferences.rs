@@ -13,5 +13,5 @@ pub fn new() -> IServicePreferences {
     are_having: false,
     are_livestreaming: false,
     livestream_is_public: false,
-  }
+  };
 }

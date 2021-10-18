@@ -15,5 +15,5 @@ pub fn new() -> ITimeZone {
     is_daylight_savings_time: false,
     description: "default-time-zone-description".to_string(),
     utc: Vec::new(),
-  }
+  };
 }

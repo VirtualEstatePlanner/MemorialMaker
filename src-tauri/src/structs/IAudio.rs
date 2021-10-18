@@ -9,5 +9,5 @@ pub fn new() -> IAudio {
   return IAudio {
     audio_data: Url::parse("https://default-url-location.com").unwrap(),
     duration: 0,
-  }
+  };
 }

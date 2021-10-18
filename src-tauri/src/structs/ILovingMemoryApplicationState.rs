@@ -24,5 +24,5 @@ pub fn new() -> ILovingMemoryApplicationState {
     scattering: IService::new(),
     charities: Vec::<ICharity::ICharity>::new(),
     // content_items: Vec::<UContentItem::UContentItem>::new(),
-  }
+  };
 }

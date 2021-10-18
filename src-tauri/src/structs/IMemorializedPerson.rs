@@ -12,5 +12,5 @@ pub fn new() -> IMemorializedPerson {
     person: IName::new(),
     date_of_birth: DateTime::<Utc>::from_utc(NaiveDateTime::from_timestamp(0, 0), Utc),
     date_of_death: DateTime::<Utc>::from_utc(NaiveDateTime::from_timestamp(0, 0), Utc),
-  }
+  };
 }

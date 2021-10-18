@@ -16,5 +16,5 @@ pub fn new() -> IAppPreferences {
     cremation_preferences: IServicePreferences::new(),
     funeral_preferences: IServicePreferences::new(),
     scattering_preferences: IServicePreferences::new(),
-  }
+  };
 }

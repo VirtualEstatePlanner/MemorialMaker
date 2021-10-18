@@ -30,5 +30,5 @@ pub fn new() -> IService {
     // programme: Vec::<IServiceAgendaItem>::new(),
     service_type: UServiceType::BURIAL.to_string(),
     // time: DateTime::<Utc>::from_utc(Utc::now(), Utc),
-  }
+  };
 }

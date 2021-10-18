@@ -15,5 +15,5 @@ pub fn new() -> IContactPerson {
     phone_number: "contact-phone-number".to_string(),
     email: IEmailAddress::new(),
     time_zone: ITimeZone::new(),
-  }
+  };
 }

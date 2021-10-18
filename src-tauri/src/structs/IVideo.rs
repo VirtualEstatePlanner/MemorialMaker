@@ -17,5 +17,5 @@ pub fn new() -> IVideo {
     caption: "video-caption".to_string(),
     //thumbnail: Vec::<ImageBuffer>::new(),
     video_data: Url::parse("https://default-url-location.com").unwrap(),
-  }
+  };
 }

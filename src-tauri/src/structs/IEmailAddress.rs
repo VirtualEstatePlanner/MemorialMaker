@@ -9,5 +9,5 @@ pub fn new() -> IEmailAddress {
     username: "user".to_string(),
     domain: "domain".to_string(),
     tld: "tld".to_string(),
-  }
+  };
 }

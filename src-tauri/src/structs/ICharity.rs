@@ -11,5 +11,5 @@ pub fn new() -> ICharity {
     name: "charity-name".to_string(),
     issue: "charity-issue".to_string(),
     url: Url::parse("default-url-location.com").unwrap(),
-  }
+  };
 }

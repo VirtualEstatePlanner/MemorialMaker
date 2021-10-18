@@ -16,5 +16,5 @@ pub fn new() -> IName {
     last: "last-name".to_string(),
     prefix: UNamePrefix::NONE.to_string(),
     suffix: UNameSuffix::NONE.to_string(),
-  }
+  };
 }
